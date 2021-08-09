@@ -73,6 +73,7 @@ dependencies
         exclude module: "gson"
         exclude module: "commons-io"
     }
+    compile 'club.minnced:java-discord-rpc:2.0.2'
 }
 
 processResources
@@ -98,6 +99,7 @@ shadowJar
     dependencies
     {
         include(dependency("org.spongepowered:mixin"))
+        include(dependency('club.minnced:java-discord-rpc'))
     }
 
     exclude "dummyThing"
